@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-bg: #020617;
+  --color-surface: #0f172a;
+  --color-accent: #8b5cf6;
+  --color-accent-secondary: #06b6d4;
+  --color-accent-tertiary: #ec4899;
+  
+  --color-border-glow: rgba(139, 92, 246, 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-bg text-slate-100 antialiased selection:bg-accent/30;
+    overflow-x: hidden;
+  }
+}
+
+@utility glass-morphism {
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px);
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@utility text-glow {
+  text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+}
+
+@utility bento-card {
+  @apply glass-morphism rounded-[2rem] p-8 transition-all duration-500 hover:bg-white/[0.06] hover:border-accent/30;
+}
+
+@utility gradient-border {
+  position: relative;
+  border-radius: 2rem;
+  background: linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+              linear-gradient(to right, var(--color-accent), var(--color-accent-secondary)) border-box;
+  border: 1px solid transparent;
+}
+
+@utility animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
