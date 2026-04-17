@@ -20,13 +20,18 @@ export default function Footer() {
         </p>
 
         <div className="flex gap-8">
-          {['LinkedIn', 'GitHub', 'Twitter'].map((item) => (
+          {[
+            { name: 'LinkedIn', link: 'https://www.linkedin.com/in/pradnya-kulkarni-baa300226/' },
+            { name: 'GitHub', link: 'https://share.google/kJBrN0OdmKTEgaJGl' }
+          ].map((item) => (
             <a
-              key={item}
-              href='https://www.linkedin.com/in/pradnya-kulkarni-baa300226/'
+              key={item.name}
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
               className="text-[10px] font-bold text-slate-400 hover:text-accent transition-colors uppercase tracking-widest"
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </div>
