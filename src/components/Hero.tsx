@@ -42,7 +42,7 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <motion.a
-              href="kulkarnipradnya066@gmail.com"
+              href="mailto:kulkarnipradnya066@gmail.com"
               whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(139, 92, 246, 0.4)' }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-accent hover:bg-accent/90 text-white rounded-2xl font-bold flex items-center gap-2 transition-all shadow-lg shadow-accent/25"
@@ -50,6 +50,7 @@ export default function Hero() {
               Get in Touch
               <Mail size={20} />
             </motion.a>
+
             <div className="flex gap-3">
               <motion.a
                 href="https://github.com"
@@ -60,6 +61,7 @@ export default function Hero() {
               >
                 <Github size={24} />
               </motion.a>
+
               <motion.a
                 href="https://www.linkedin.com/in/pradnya-kulkarni-baa300226/"
                 target="_blank"
@@ -69,6 +71,7 @@ export default function Hero() {
               >
                 <Linkedin size={24} />
               </motion.a>
+
               <motion.a
                 href="https://res.cloudinary.com/dn19hommj/image/upload/fl_attachment:Resume/v1776340609/pk_jmjjzz.jpg"
                 whileHover={{ y: -5, backgroundColor: 'rgba(255,255,255,0.1)' }}
