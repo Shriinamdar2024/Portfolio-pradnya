@@ -55,7 +55,7 @@ export default function Hero() {
 
             <div className="flex gap-3">
               <motion.a
-                href="https://github.com"
+                href="https://share.google/kJBrN0OdmKTEgaJGl"
                 target="_blank"
                 rel="noreferrer"
                 whileHover={{ y: -5, backgroundColor: 'rgba(255,255,255,0.1)' }}
