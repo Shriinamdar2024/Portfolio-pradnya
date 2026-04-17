@@ -42,11 +42,9 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <motion.a
-              href="mailto:kulkarnipradnya066@gmail.com"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "mailto:kulkarnipradnya066@gmail.com";
-              }}
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=kulkarnipradnya066@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(139, 92, 246, 0.4)' }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-accent hover:bg-accent/90 text-white rounded-2xl font-bold flex items-center gap-2 transition-all shadow-lg shadow-accent/25"
